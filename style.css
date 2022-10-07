@@ -156,3 +156,12 @@ section:nth-child(5){
     background-color: #507991;
 
 }
+#articulo {
+    display: flex;
+  }
+
+#articulo1 {
+    flex-direction: row-reverse;
+    text-align: center;
+}
+
