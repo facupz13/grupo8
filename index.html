@@ -2,6 +2,9 @@
 <html lang="Es">
 
 <head>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
     <title>Reseñas de Libros</title>
     <link rel="stylesheet" href="style.css" />
 
@@ -10,25 +13,40 @@
 <body>
 
     <header>
-        <nav class="menu">
-            <div>
-                <img src="img/sinFONDO.png" class="logo">
+        <nav class="navbar navbar-expand-lg bg-black">
+          <div>
+        <img src="img/sinFONDO.png" alt="Logo libros" height="50">
+         </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="index.html#section1">Incio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="index.html#section2" >¿Quiénes somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#Categorias" >Categorias</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#footer">Contacto</a>
+                </li>
+              </ul>
+              
             </div>
-            <div>
-                <a href="#section1">Inicio</a>
-                <a href="Categorias">Categorias</a>
-                <a href="#section2">¿Quiénes somos?</a>
-                <a href="#section3">Contacto</a>
-            </div>
-        </nav>
-    </header>
+       
+          
+      
+      </header>
+    
 
     <section id="section1">
         <div class="texto1">
             <img src="img/sinFONDO.png" class="titulo1" />
-            <p id="texto1">Somos un grupo de aficionados a la lectura y te traemos nuestras recomendaciones de libros, ¡Pasá a conocernos!
+            <p id="texto1">Somos un grupo de aficionados a la lectura y te traemos nuestras recomendaciones de libros,
+                ¡Pasá a conocernos!
             </p>
-            
+
         </div>
         <div>
             <img src="img/libros.png" id="imag1" />
@@ -38,29 +56,25 @@
     <section id="section2">
         <div class="contenedorSection2">
             <h3>¿Quiénes somos?</h3>
-        <div class="nosotros">
-            <div>
-                <img src="img/nosotros/esteban2.jpg" alt="Esteban" width="200px">
-                <h4>Esteban</h4>
-                <p></p>
-            </div>
-            <div>
-                <img src="img/nosotros/facundo.jpeg" alt="Esteban" width="200px">
-                <h4>Esteban</h4>
-                <p></p>
-            </div>
-            <div>
-                <img src="img/nosotros/LAU.jpg" alt="Esteban" width="200px">
-                <h4>Esteban</h4>
-                <p></p>
-            </div>
-        </div>
-            <div>
-            <a href="#section1">anterior</a>
-            <a href="#section3">siguiente</a>
+            <div class="nosotros Imagensomos">
+                <div>
+                    <img src="img/nosotros/esteban2.jpg" alt="Esteban">
+                    <h4>Esteban</h4>
+                    <p></p>
+                </div>
+                <div>
+                    <img src="img/nosotros/facundo.jpeg" alt="Esteban">
+                    <h4>Esteban</h4>
+                    <p></p>
+                </div>
+                <div>
+                    <img src="img/nosotros/LAU.jpg" alt="Esteban">
+                    <h4>Esteban</h4>
+                    <p></p>
+                </div>
             </div>
         </div>
-        
+
 
     </section>
 
@@ -76,16 +90,25 @@
                 <label for="Comentario">Comentario:</label><br>
                 <textarea name="message" id="Comentario" cols="30" rows="10"></textarea>
                 <br>
-                <button type="button" onclick="alert('En este momento no podemos enviar tu mensaje, intenta nuevamente más tarde!')">Enviar!</button>
+                <button type="button"
+                    onclick="alert('En este momento no podemos enviar tu mensaje, intenta nuevamente más tarde!')">Enviar!</button>
             </form>
-        </div class=footer>
-        </section>
-        <div>
-        <footer>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <img src="img/sinFONDO.png" alt="Logo">
         <p>Copyright © 2022 - Todos los derechos reservados</p>
-        </footer>
+        <div>
+            <a href=""><img src="img/facebook-logo-3-1.png" alt="Facebook"></a>
+            <a href=""><img src="img/logo-instagram.png" alt="Instagram"></button></a>
+            <a href=""><img src="img/whatsapp-logo.png" alt="Whatsapp"></a>
         </div>
 
+    </footer>
+
+                <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 
 </html>
