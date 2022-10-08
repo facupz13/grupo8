@@ -22,7 +22,7 @@ header{
 }*/
 
 .titulo1{
-    height: 150px;
+    height: 100px;
     margin: 0 0 40px 0;
     
 }
@@ -33,6 +33,7 @@ header{
 }
 
 section{
+    background-color: bisque;
     padding-top: 40px;
     padding-left: 60px;
     padding-right: 60px;
@@ -67,13 +68,10 @@ section{
     margin-bottom: 100px;
 }
 
-/*
 .texto3{
-    width: 500px;
+    background-color: aliceblue;
+    padding: 20px;
 }
-.texto4{
-    width: 500px;
-}*/
 section h2{
     color: black;
     font-size: 90px;
@@ -105,7 +103,7 @@ section p{
     -ms-flex-align: center;
     text-align: left;
 }
-section:nth-child(2){
+/*section:nth-child(2){
     background-color: #507991;
 }
 section:nth-child(3){
@@ -118,7 +116,7 @@ section:nth-child(4){
 section:nth-child(5){
     background-color: #27833b;
 
-}
+}*/
 #articulo {
     display: flex;
   }
@@ -137,7 +135,7 @@ section:nth-child(5){
     display: flex;
     justify-content: space-between;
     align-items: center;
-height: 50px;
+    height: 50px;
 }
 
 footer img{
@@ -161,7 +159,7 @@ footer img{
     margin-top: 60px;
     border-radius: 6px;
     overflow: hidden;
-    background-color: white;
+    background-color: aliceblue;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     transition: all 400ms ease;
 }
@@ -177,6 +175,7 @@ footer img{
     text-align: center;
 }
 .textocard a{
+    color: rgb(225, 173, 99);
     font-size: 25px;
     text-decoration: none;
 }
