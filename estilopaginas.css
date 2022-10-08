@@ -11,7 +11,7 @@ html{
     position: fixed;
 }
 section{
-    height: 100vh;
+    height: 900px;
     width: 100%; 
 }
 .inicio{
@@ -28,7 +28,15 @@ section{
     justify-content: space-around;
     background-color: rgb(225, 173, 99);
 }
+
+
+.imginicio img{
+    margin-top: 0px;
+    height: 200px;
+}
+
 .section{
+    height: 900px;
     display: flex;
     justify-content: center;
     background-color: bisque;
@@ -38,8 +46,10 @@ section{
     flex-direction: column;
     justify-content: center;
     margin: 15px;
+    height: 200px;
 }
 .contenido{ 
+    
     padding: 60px;
     padding-top: 100px;
     width: 700px;
@@ -47,11 +57,88 @@ section{
 }
 .imagenes{
     padding-top: 100px;
-    text-align: center
+    text-align: center;
     width: 210px;
-    height: 100vh;
+    height: 900px;
     background-color: rgb(225, 173, 99);
+}
+ 
+@media (max-width: 980px){
+    /*Correción de navbar dispositivos pequeños*/
+.menu{  
+    width: 100%;
+    position: fixed;
+    font-size: 40px;
+
 }
 
 
+section{
+    height: 1800px;
+    width: 100%; 
+}
 
+/*Correción de Incio dispositivos pequeños*/ 
+
+.inicio{
+    padding-top: 200px;
+}
+.inicio h2{
+    font-size: 80px;
+}
+.inicio p{
+    margin-top: 50px;
+    font-size: 50px ;
+}
+.imginicio{
+    height: 920px;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(225, 173, 99);
+}
+.imginicio img{
+    margin-top: 30px;
+    height: 400px;
+}
+
+/*Correción de Conenido dispositivos pequeños*/ 
+
+.section{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contenido{ 
+    padding: 60px;
+    padding-top: 100px;
+    width: 700px;
+    height: 1700px;
+    background-color: aliceblue;
+}
+.contenido h2{
+    font-size: 60px;
+}
+.contenido p{
+    font-size: 35px;
+}
+
+.section img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    height: 250px;
+}
+
+.imagenes{
+    padding-top: 100px;
+    text-align: center;
+    flex-direction: row;
+    width: 210px;
+    height: 1700px;
+    background-color: rgb(225, 173, 99);
+}
+}
