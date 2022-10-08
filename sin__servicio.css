@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor404{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    
+}
+.imgservicio{
+    width: 350px;
+    height: 350px;
+    margin-top: 30px;
+    background-color: rgb(255, 247, 24);
+    padding: 50px;
+    border-radius: 200px;
+}
+.texto404 h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.texto404 p{
+    margin: 20px 0 40px 0;
+    font-size: 20px;
+}
+.texto404 a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: white;
+    color: blue;
+}
+.texto404 a:hover{
+    background: blue;
+    color: white;
+    border: blue;
