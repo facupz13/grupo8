@@ -305,5 +305,19 @@ footer img{
     font-size: 40px;
 }
 
+#footer {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
 
+footer p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#imgfooter {
+    padding-bottom: 30px;
+}
 }
