@@ -1,31 +1,39 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-html {
+html{
     scroll-behavior: smooth;
 }
-
-.menu {
+.menu{
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
+/*
+body{
+    /*background-image: linear-gradient(to bottom, orange 0%, rgb(255, 55, 0) 100%);
+}*/
+/*
+header{
+   width: 100%;
+   height: 300px;
+   background-color: aqua;
+}*/
 
-.titulo1 {
+.titulo1{
     height: 100px;
     margin: 0 0 40px 0;
-
+    
 }
-
-.logo {
+.logo{
     margin: 10px 0 10px 30px;
     width: 200px;
     height: auto;
 }
 
-section {
+section{
     background-color: bisque;
     padding-top: 40px;
     padding-left: 60px;
@@ -33,80 +41,96 @@ section {
     height: 100vh;
     display: flex;
     justify-content: space-around;
+    /*text-align: center;*/
     align-items: center;
 }
+/*
+.texto1{
+    width: 500px;
+    height: 600px;
+}
+*/
 
-.nosotros p {
+.nosotros p{
     width: 400px;
 }
 
-.nosotros {
+.nosotros
+{
     display: flex;
 }
 
-.contenedorSection2 {
+.contenedorSection2{
     text-align: center;
 
 }
 
-.contenedorSection2 h3 {
+.contenedorSection2 h3{
     margin-bottom: 100px;
 }
 
-.texto3 {
+.texto3{
     background-color: aliceblue;
     padding: 20px;
 }
-
-section h2 {
+section h2{
     color: black;
     font-size: 90px;
     font-weight: 500px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
-
-section h3 {
+section h3{
     font-size: 40px;
     font-weight: 500px;
     margin-bottom: 10px;
 }
-
-section p {
+section p{
     font-size: 20px;
     margin-bottom: 20px;
     width: 600px;
 }
-
-#texto1 {
+#texto1{
     font-size: 50px;
     width: 700px;
 }
 
-#section1 {
+#section1{
     flex-direction: row-reverse;
     text-align: center;
 }
 
-#section3 {
+#section3{
     flex-direction: row;
     -ms-flex-align: center;
     text-align: left;
 }
+/*section:nth-child(2){
+    background-color: #507991;
+}
+section:nth-child(3){
+    background-color: #50396b;
+}
+section:nth-child(4){
+    background-color: #c0a52e;
 
+}
+section:nth-child(5){
+    background-color: #27833b;
+
+}*/
 #articulo {
     display: flex;
-}
+  }
 
 #articulo1 {
     display: flex;
 }
-
-.Imagensomos img {
-    height: 200px;
-    border-radius: 10px;
+.Imagensomos img
+{
+ height: 200px;
+ border-radius: 10px;
 }
-
-#footer {
+#footer{
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -115,23 +139,21 @@ section p {
     height: 50px;
 }
 
-footer img {
+footer img{
     height: 40px;
     text-decoration: none;
 }
 
-#sectioncard {
+#sectioncard{
     display: flex;
     flex-direction: column;
 }
-
-.container__card {
+.container__card{
     margin: 0px;
     display: flex;
     flex-wrap: wrap;
 }
-
-.card {
+.card{
     width: 150px;
     height: 270px;
     margin: 50px;
@@ -139,166 +161,149 @@ footer img {
     border-radius: 6px;
     overflow: hidden;
     background-color: aliceblue;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     transition: all 400ms ease;
 }
-
-.card:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
     transform: translateY(-3%);
 }
-
-.card img {
-    width: 100%;
+.card img{
+  width: 100%;
 }
-
-.textocard {
+.textocard{
     padding: 10px;
     text-align: center;
 }
-
-.textocard a {
+.textocard a{
     color: rgb(225, 173, 99);
     font-size: 25px;
     text-decoration: none;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 980px){
 
-    section {
-        padding-top: 40px;
-        padding-left: 60px;
-        padding-right: 60px;
-        height: 3500px;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+section{
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 3500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /*text-align: center;*/
+    align-items: center;
+}
+  /*Correción de quienes somos dispositivos pequeños*/ 
+.nosotros
+{
+    display: flex;
+    flex-direction: column;
+}
+.Imagensomos img
+{
+ height: 600px;
+ border-radius: 10px;
+}
+.nosotros p{
+    width: 800px;
+}
 
-    /*Correción de quienes somos dispositivos pequeños*/
-    .nosotros {
-        display: flex;
-        flex-direction: column;
-    }
+section h3{
+    font-size: 100px;
+    font-weight: 500px;
+    margin-bottom: 10px;
+}
+section p{
+    font-size: 40px;
+    margin-bottom: 20px;
+    width: 600px;
+}
+section h4 {
+    font-size: 65px;
+}
+ /*Correción de inicio dispositivos pequeños*/ 
+#section1{
+    flex-direction: column-reverse;
+    text-align: center;
+    height: 1750px;
+}
+#texto1{
+    font-size: 60px;
+    width: 700px;
+}
 
-    .Imagensomos img {
-        height: 600px;
-        border-radius: 10px;
-    }
+/*Correción de Categorias dispositivos pequeños*/ 
+#sectioncard{
+    display: flex;
+    flex-direction: column;
+}
+.container__card{
+    height: 1700px;
+    margin-top: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 320px;
+    height: 450px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card img{
+  width: 100%;
+}
+.textocard{
+    padding: 0px;
+    text-align: center;
+}
+.textocard a{
+    font-size: 50px;
+    text-decoration: none;
+}
+/*Correción de Contactanos   dispositivos pequeños*/ 
+#section3{
+    flex-direction: row;
+    -ms-flex-align: center;
+    text-align: center;
+    font-size: 40px;
+    height: 1500px;
+}
+#section3 h3{
+    margin-bottom: 30px;
+}
+/*Correción de footer dispositivos pequeños*/ 
 
-    .nosotros p {
-        width: 800px;
-    }
+#footer{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+height: 200px;
+font-size: 30px;
+}
 
-    section h3 {
-        font-size: 100px;
-        font-weight: 500px;
-        margin-bottom: 10px;
-    }
+footer img{
+    height: 75px;
+    text-decoration: none;
+    
+}
 
-    section p {
-        font-size: 40px;
-        margin-bottom: 20px;
-        width: 600px;
-    }
-
-    section h4 {
-        font-size: 65px;
-    }
-
-    /*Correción de inicio dispositivos pequeños*/
-    #section1 {
-        flex-direction: column-reverse;
-        text-align: center;
-        height: 1750px;
-    }
-
-    #texto1 {
-        font-size: 60px;
-        width: 700px;
-    }
-
-    /*Correción de Categorias dispositivos pequeños*/
-    #sectioncard {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container__card {
-        height: 1700px;
-        margin-top: 0px;
-        margin: 0px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        width: 320px;
-        height: 450px;
-        border-radius: 6px;
-        overflow: hidden;
-        background-color: white;
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-        transition: all 400ms ease;
-    }
-
-    .card:hover {
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-        transform: translateY(-3%);
-    }
-
-    .card img {
-        width: 100%;
-    }
-
-    .textocard {
-        padding: 0px;
-        text-align: center;
-    }
-
-    .textocard a {
-        font-size: 50px;
-        text-decoration: none;
-    }
-
-    /*Correción de Contactanos   dispositivos pequeños*/
-    #section3 {
-        flex-direction: row;
-        -ms-flex-align: center;
-        text-align: center;
-        font-size: 40px;
-        height: 1500px;
-    }
-
-    #section3 h3 {
-        margin-bottom: 30px;
-    }
-
-    /*Correción de footer dispositivos pequeños*/
-
-    #footer {
-        color: rgb(255, 255, 255);
-        background-color: rgb(0, 0, 0);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 200px;
-        font-size: 30px;
-    }
-
-    footer img {
-        height: 75px;
-        text-decoration: none;
-
-    }
-
-    /*Correción de navbar dispositivos pequeños*/
-    .menu {
-        width: 100%;
-        position: fixed;
-        font-size: 40px;
-    }
+/*Correción de navbar dispositivos pequeños*/ 
+.menu{  
+    width: 100%;
+    position: fixed;
+    font-size: 40px;
+}
 
 
 }
